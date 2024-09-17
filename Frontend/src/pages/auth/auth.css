@@ -1,0 +1,103 @@
+/*=================Register page==================*/
+
+ 
+.sign_container .sign_header img{
+    width: 12rem;
+    margin-top:-2.5rem;
+    cursor: pointer;
+}
+.sign_container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign_container .sign_form{
+    border:1px solid #c9c9c9 ;
+    padding: 0.75rem 2rem;
+    border-radius:0.35rem;
+    margin-bottom: 1.5rem;
+    margin-top: -2.5rem;
+}
+.sign_container .sign_form h1{
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin: 0.75rem 0;
+}
+.sign_container .sign_form label{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+.sign_container .sign_form input{
+    width: 100%;
+    height: 1.5rem;
+    /*padding:0.2rem 0.5rem;*/
+    border-radius: 0.2rem;
+    border: 1px solid #a6a6a6;
+    outline: none;
+    margin-bottom:0.5rem ;
+    margin-top: 0.1rem;
+
+
+}
+.sign_container .sign_form .sign_btn{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 1.5rem;
+    background-color: #f3d078;
+    border: 1px solid #9c7e31;
+    outline: none;
+    border-radius: 0.2rem;
+    color: #111;
+    cursor: pointer;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b)
+}
+.sign_container .sign_form input:focus{
+    box-shadow: 0 0 10px 0px #ffbc2c;
+}
+
+/*--------------- for login page*/
+.createAc{
+    font-size: 0.85rem;
+    text-align: center;
+    color: #767676;
+    margin-top:0.5rem;
+    font-weight: 600;
+}
+.createAc button{
+    height: 1.5rem;
+    width:18rem;
+    border-radius:0.2rem;
+    border: 1px solid #adb1b8;
+    outline: none;
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.sign_container .sign_form .signIn-info{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.sign_container .sign_form .signIn-info p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #222;
+}
+.sign_container .sign_form .signIn-info a{
+    font-size: 1rem;
+    letter-spacing: .5px;
+    margin-left: 0.3rem;
+    color-scheme: #0066c0;
+    text-decoration: none;
+    font-weight: 600;
+}
+.forgetPassword{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #222;
+    cursor: pointer;
+}

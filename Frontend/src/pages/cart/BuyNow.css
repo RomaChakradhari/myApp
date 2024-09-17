@@ -1,0 +1,334 @@
+.buy_section{
+    background-color:#eaeded;
+}
+.buy_section .buy_container{
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    /*justify-content: space-around;*/
+}
+.buy_container .left{
+    flex: .6;
+    background: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+}
+.left h1{
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+.left p{
+    font-size:1rem;
+    margin: 5px auto;
+    color: #007185;
+}
+.left span{
+    display: block;
+    text-align: right;
+    color: #565959;
+    font-size: 1rem;
+    padding-right:0.25rem;
+}
+.left .item_container{
+    padding:0.75rem 0.35rem 1.25rem 1rem;
+    display: grid;
+    grid-template-columns: .8fr 2fr .1fr;
+}
+.item_container img{
+    width: 8.5rem;
+}
+.item_container h3{
+    font-weight: 500;
+}
+.item_container .itemPrice2{
+    font-weight:700;
+}
+.item_container p{
+    font-size: 1rem;
+    color: #565959!important;
+    font-weight: 500;
+}
+.itemDetail img{
+    width:4.5rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+.itemDetail .usual{
+    color:#c45500 !important;
+}
+.itemDetail .Addselect{
+    display: flex;
+    align-items: center;
+}
+.itemDetail .Addselect p{
+    color: #007185 !important;
+    font-size: 1rem;
+    margin-top: 0.75rem;
+}
+.itemDetail .Addselect select{
+    padding: 0.35rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    background-color: #eee6e6;
+    margin-top: 0.45rem;
+    outline: none;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 15px -7px rgba(0,0,0,1);
+    letter-spacing: .2px;
+}
+.SubItem{
+    display: flex;
+    justify-content: flex-end;
+}
+.SubItem h3{
+    font-weight: 500;
+    margin: 0.75rem 0;
+}
+.left .itemPrice1{
+    display: none;
+}
+
+/*  Right Proceed to buy */
+.buy_container .right{
+    flex: .3;
+    margin-right: -3rem;
+    padding: 0 1.5rem;
+    border-radius: 0.25rem;
+}
+.buy_container .right img{
+    width: 24rem;
+}
+.buy_container .right .cost{
+    background-color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 0.75rem;
+    min-height: 18rem;
+}
+.buy_container .right .cost p{
+    color: #007185;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+}
+.buy_container .right .cost h3{
+    font-weight: 500;
+    margin-top: 1.25rem;
+}
+.cost .Buy_btn{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color:#FFD814;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px -3px rgba(0,0,0,.5);
+}
+.cost .Buy_btn:hover{
+    background-color:#f3cc0a;
+}
+.cost .emi{
+    padding: 0.65rem;
+    border: 1px solid #ebe8e8;
+    margin-top:1.25rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+.buy_container .right .Proceed_buy .address{
+    background-color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    
+}
+.buy_container .right .Proceed_buy .address h4{
+    color: #007185;
+    text-align: center;
+}
+.buy_container .right .Proceed_buy .address h3{
+    color:  #565959;
+}
+.buy_container .right .Proceed_buy .address .buy-btn{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color:#FFD814;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px -3px rgba(0,0,0,.5);
+}
+
+/*media for buy now page*/
+@media(max-width:770px){
+    .buy_section{
+        min-height: 45vh;
+    }
+    .buy_section .buy_container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.75rem;
+    }
+    .cost .emi{
+        display: none;
+    }
+    .item_container img{
+        width: 8rem;
+        padding-right: 0.75rem;
+    }
+    .buy_container .right img{
+        display: none;
+    }
+    .buy_container .right .cost{
+        min-height: 7rem;
+        margin-bottom: 1.5rem;
+    }
+    .buy_container .left{
+        flex: 1;
+        /* order: 2;*/
+    }
+    .buy_container .right{
+        flex: 1;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+ 
+@media(max-width:500px){
+    .left{
+        padding: 0;
+    }
+    .item_container img{
+        width: 6rem;
+    }
+    .left h1{
+        font-size: 1.5rem;
+    }
+    .item_container h3{
+        font-size:1rem ;
+    }
+    .left .itemPrice1{
+        display: block;
+        font-weight: 700;
+    }
+    .itemDetail img{
+        display: none;
+    }
+    .item_container p{
+        font-size: 0.85rem;
+    }
+    .itemDetail .Addselect p{
+        font-size: 0.85rem;
+        margin-left: 1.35rem;
+    }
+    .itemDetail .Addselect .removeMedia,
+    .itemDetail .Addselect span{
+        display: none;
+    }
+    .SubItem h3{
+        font-size: 1.15rem;
+    }
+    .itemDetail .usual{
+        line-break: loose;
+    }
+    .left .leftBuyPrice{
+        display: none;
+    }
+    .left .itemPrice2{
+        display: none;
+    }
+
+}
+
+.payment{
+    width: 40%;
+    margin: 0 auto ;
+}
+/*  
+@media (max-width:500px)
+    /* for empty 
+    .buynow_container .empty_buy .emptydata h1{
+        font-size: 15px;
+    }
+
+    .buynow_container .empty_buy .emptydata p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .empty_buy .empty_btn{
+        margin-left:30px;
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    .buynow_container .empty_buy img{
+        width: 50px;
+        margin-left: -10px;
+    }
+    
+}
+ 
+.cost_right .hide{
+  display: none;
+}
+
+.cost_right .show{
+    display: block;
+}
+
+
+
+/* empty cart 
+.buynow_container .empty_buy{
+    flex: .7;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} 
+
+.buynow_container .empty_buy img{
+    width: 70px;
+}
+
+.buynow_container .empty_buy .emptydata{
+    margin-left: 30px;
+}
+
+
+.buynow_container .empty_buy .emptydata h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.buynow_container .empty_buy .emptydata p{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #007185;
+    cursor: pointer;
+}
+
+.empty_buy .empty_btn{
+    margin-left: 60px;
+    padding: 7px 13px;
+    text-decoration: none;
+    background-color:#007185;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+/* media query 
+ 

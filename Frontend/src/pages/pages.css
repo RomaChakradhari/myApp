@@ -1,0 +1,160 @@
+/*--------------------page not found----------------------*/
+
+.pnf{
+    display: flex;
+    min-height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pnf-title{
+    font-size: 6rem;
+}
+
+.pnf a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    color: black;
+}
+.pnf a:hover{
+    background-color: black;
+    color: white;
+}
+.pnf-heading{
+    margin: 1.5rem;
+}
+
+/*----------contact us-------------*/
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+.contact-container .img{
+    flex: .5;
+}
+ 
+.img img{
+    width: 100%;
+    padding: 1rem;
+}
+.contact-container .contact-Details{
+    flex: .4;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact-Details h3{
+    background-color: rgb(25, 25, 31);
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.contact-Details .des{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.contact-Details p{
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+}
+.contact-Details a{
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width:700px){
+    .contact-container{
+        flex-direction: column;
+    }
+    .img{
+        flex: 1;
+        width: 100%;
+         
+    }
+    .contact-Details{
+        flex: 1;
+    }
+}
+
+/*-----------about-----------*/
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+.about-container .img{
+    flex: .5;
+}
+.about-container .about{
+    flex: .4;
+}
+.about-container .img img{
+    width: 100%;
+    margin: 1rem;
+}
+@media(max-width:700px){
+    .about-container{
+        flex-direction: column;
+    }
+    .about-container .img img{
+        flex: 1;
+    }
+}
+
+/*-------banner home page-------*/
+.bannerImg{
+    width: 100%;
+    height: 18rem;
+
+}
+.carousel{
+    margin-top:10;
+}
+
+/*================home page==============*/
+.filter h5 {
+
+    color: gray !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+}
+.loadmore {
+    color: green;
+    font-weight: bold;
+    font-size: 20px !important;
+}
+.homepage .card {
+    background-color: rgba(128, 128, 128, 0.097);
+    width: 18rem;
+}
+.homepage .card-name-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.homepage .card img:hover {
+    transform: scale(0.9);
+}
+@media(max-width:500px){
+    .filter{
+        display: none;
+    }
+    .bannerImg{
+        height: 9rem;
+    }
+     
+}
+
+/*================All category page =========================*/
+.category .cate-btn{
+    background-color: rgb(230, 187, 95);
+    height: 3rem;
+     
+}
